@@ -36,21 +36,21 @@
         background-position: right;
         transition: background-position 1s ease;
     }
-    #hero {
-        min-height: calc(100vh - 270px);
-        padding-top: 00px;
-    }
+    /* #hero {
+        min-height: calc(100vh - 60px);
+        padding-top: 60px;
+    } */
 
-    @media screen and (min-height: 800px) {
+    /* @media screen and (min-height: 800px) {
         #hero {
-            /* padding-top: 90px; */
-            min-height: calc(100vh - 270px);
+            padding-top: 90px;
+            min-height: calc(100vh - 60px);
         }
-    }
+    } */
 </style>
 <section
     id="hero"
-    class={`font-quicksand max-w-section w-[96%] mx-auto flex flex-col-reverse justify-center items-center pt-10 mt-20
+    class={`font-quicksand max-w-section w-[96%] mx-auto flex flex-col-reverse justify-center items-center mt-18 pt-36
                         xl:flex-row xl:justify-between xl:items-center  relative
                         `}
 >
@@ -97,5 +97,7 @@
         src="../assets/hero-mockup.webp"
         alt="bup phone mockup"
         class="hero-img w-48 sm:w-60 md:w-80 xl:w-[450px] drop-shadow-lg"
+        width="192"
+        height="220"
     />
 </section>
