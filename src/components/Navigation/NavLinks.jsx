@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {GiHamburgerMenu} from "react-icons/gi"
+import {GiHamburgerMenu} from "react-icons/gi/index.js"
 // import ThemeSwitcher from "./ThemeSwitcher.astro"
 
 const NavLinks = () => {
