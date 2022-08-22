@@ -41,10 +41,11 @@ const NavLinks = () => {
                 {
                     Links.map((link) => (
                         <div key={link.title}>
-                            <li className=" pb-10 lg:pb-0">
-                                <a href={link.location}>{link.title}</a>
+                            {/* <li className=" pb-10 lg:pb-0"> */}
+                            <li className={link.title === "Login" && "login-btn p-2 font-bold"}>
+                                <a href={link.location} >{link.title}</a>
                             </li>
-                            <hr className="w-4/5 mx-auto lg:hidden" />
+                            {/* <hr className="w-4/5 mx-auto lg:hidden" /> */}
                         </div>
                     ))
                 }
