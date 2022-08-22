@@ -1,0 +1,18 @@
+---
+import BasicScripts from "../components/core/BasicScripts.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>BUP</title>
+	</head>
+	<body class="dark:bg-black">
+		<slot />
+		<BasicScripts />
+	</body>
+</html>
