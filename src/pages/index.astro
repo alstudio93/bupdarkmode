@@ -1,9 +1,13 @@
 ---
 import Hero from "../components/Hero.astro";
 import MissionStatement from "../components/MissionStatement.astro";
+import Marquee from "../components/Marquee.astro";
 import Navbar from "../components/Navigation/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 import Ecwid from "../components/Ecwid.astro";
+import Features from "../components/Features.astro";
+import BupVideo from "../components/BupVideo.astro";
+import Pricing from "../components/Pricing";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -12,6 +16,7 @@ import Ecwid from "../components/Ecwid.astro";
 		<Navbar />
 		<Hero />
 		<MissionStatement />
+		<Marquee />
 
 		<!-- Discovered that flickering didn't start until Ecwid Script was implemented. -->
 		<section id="products" class="max-w-section mx-auto pt-[120px]">
@@ -30,5 +35,9 @@ import Ecwid from "../components/Ecwid.astro";
 			</div>
 			<Ecwid />
 		</section>
+		<BupVideo />
+		<Features />
+		<Pricing client:load />
+		<!-- <FAQ client:load /> -->
 	</main>
 </Layout>

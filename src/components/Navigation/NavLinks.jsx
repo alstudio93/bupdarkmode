@@ -13,7 +13,7 @@ const NavLinks = () => {
                 {
                     Links.map((link) => (
                         <div key={link.title}>
-                            <li className={link.title === "Login" && "login-btn py-2 px-4 rounded-lg"}>
+                            <li className={link.title === "Login" && "login-btn py-2 px-4 rounded-lg text-white "}>
                                 <a href={link.location} >{link.title}</a>
                             </li>
                         </div>
